@@ -23,7 +23,7 @@ export default function Cast() {
       {
         <ul className={css.styledList} >
           {cast.map(({ id, profile_path, original_name, character }) => (
-            <il className={css.itemil} key={id}>
+            <li className={css.itemil} key={id}>
               <img
                 src={`${
                   profile_path
@@ -38,7 +38,7 @@ export default function Cast() {
               <p>
                 <span>Character:</span> {character}
               </p>
-            </il>
+            </li>
           ))}
         </ul>
       }
