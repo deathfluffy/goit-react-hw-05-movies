@@ -1,9 +1,8 @@
 import React from 'react';
 import { Hourglass } from 'react-loader-spinner'
-export const Loader  = ({ className = '' }) => {
+export default function  Loader  () {
   return (
-    (<Hourglass
-     className={className}
+    <Hourglass  
      visible={true}
      height="80"
      width="80"
@@ -11,6 +10,6 @@ export const Loader  = ({ className = '' }) => {
      wrapperStyle={{}}
      wrapperClass=""
      colors={['#306cce', '#72a1ed']}
-  />)
+  />
   );
 };
